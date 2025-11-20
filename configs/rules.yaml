@@ -1,0 +1,5 @@
+rules:
+  - event: "FailedScheduling"
+    action: "scale_node"
+  - event: "CrashLoopBackOff"
+    action: "restart_pod"
